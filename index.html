@@ -86,7 +86,7 @@
         window.location.href = "/";
     }
 
-    function load() {
+    function onload() {
         const token = localStorage.getItem('jwt');
         window.addEventListener('popstate', function(e) {
 
@@ -96,7 +96,7 @@
             getDashboard();
         }
     }
-    
+    onLoad();
 </script>
 
 </body>
